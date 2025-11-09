@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Guardian</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+      *:before,
+      *:after{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+      }
+      body{
+          background-color: #080710;
+          display: flex;
+          justify-content: center; /* Centering the form horizontally */
+          align-items: center; /* Centering the form vertically */
+          height: 100vh; /* Making sure the form is centered vertically on the screen */
+      }
+      .background{
+          width: 100%; /* Adjusted width */
+          height: 100%; /* Adjusted height */
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: url('https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'); /* Added background image */
+          background-size: cover;
+          background-position: center;
+          filter: brightness(70%); /* Adjusted brightness */
+      }
+      .shape{
+          height: 200px;
+          width: 200px;
+          position: absolute;
+          border-radius: 50%;
+      }
+      
+      form{
+          height: 600px;
+          width: 400px;
+          background-color: rgba(255,255,255,0.13);
+          position: absolute;
+          border-radius: 10px;
+          backdrop-filter: blur(10px);
+          border: 2px solid rgba(255,255,255,0.1);
+          box-shadow: 0 0 40px rgba(8,7,16,0.6);
+          padding: 50px 35px;
+          text-align: center; /* Aligning the content center */
+      }
+      form *{
+          font-family: 'Poppins',sans-serif;
+          color: #ffffff;
+          letter-spacing: 0.5px;
+          outline: none;
+          border: none;
+      }
+      form h3{
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 42px;
+          text-align: center;
+      }
+
+      /* Adjusted style for labels */
+      label{
+          display: block;
+          margin-top: 30px;
+          font-size: 16px;
+          font-weight: 500;
+          text-align: left; /* Aligning labels to the left */
+      }
+
+      input{
+          display: block;
+          height: 50px;
+          width: 100%;
+          background-color: rgba(255,255,255,0.07);
+          border-radius: 3px;
+          padding: 0 10px;
+          margin-top: 8px;
+          font-size: 14px;
+          font-weight: 300;
+      }
+      ::placeholder{
+          color: #e5e5e5;
+      }
+      button{
+          margin-top: 50px;
+          margin-bottom: 20px; /* Added margin-bottom to create space */
+          width: 100%;
+          background-color: #ffffff;
+          color: #080710;
+          padding: 15px 0;
+          font-size: 18px;
+          font-weight: 600;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      select {
+          display: block;
+          height: 50px;
+          width: 100%;
+          background-color: rgba(255,255,255,0.07);
+          border-radius: 3px;
+          padding: 0 10px;
+          margin-top: 8px;
+          font-size: 14px;
+          font-weight: 300;
+          color: #ffffff; /* Text color */
+          border: none;
+          outline: none;
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background-image: url(project main/img/bg.jpg)"; /* Arrow icon */
+          background-repeat: no-repeat;
+          background-position: right 10px top 50%;
+          background-size: 24px auto;
+      }
+
+      select option {
+          background-color: #080710;
+          color: #ffffff;
+          border: none;
+      }
+
+      select:focus {
+          background-color: rgba(255,255,255,0.1);
+      }
+
+      /* New CSS for the links */
+      .signup-link, .guest-mode-link {
+          color: #ffffff;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          text-decoration: underline; /* Adding underline effect */
+          margin-left: 10px; /* Adjusting margin for spacing between links */
+          margin-right: 10px; /* Adjusting margin for spacing between links */
+          transition: color 0.3s; /* Adding transition for color change */
+      }
+
+      .signup-link:hover, .guest-mode-link:hover {
+          color: #ffcc00; /* Changing color on hover */
+      }
+    </style>
+</head>
+<body>
+    <div class="background"></div> <!-- Removed shapes from here -->
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form action="home">
+        <h3>Login Here</h3>
+
+        <label for="username">User name:</label>
+        <input type="text" placeholder="Username" id="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Password" id="password" required>
+
+        
+
+        <button type="submit">Log in </button>
+        
+        <!-- Added margin-top to create space -->
+        <a href="signup" class="signup-link" style="margin-top: 10px;">Sign Up</a> <!-- Added Sign Up link -->
+
+        <!-- Added Guest Mode link -->
+        <a href="test" class="guest-mode-link">Guest Mode</a>
+    </form>
+
+   </body>
+</html>
