@@ -47,4 +47,4 @@ Not a replacement for professional mental health care. Educational support tool 
 - Voice interface
 
 ## Author
-Rizwan Nowfal
+Rizwan N
